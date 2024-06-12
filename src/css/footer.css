@@ -1,3 +1,16 @@
+.dark {
+    background-color: var(--black);
+    color: var(--white);
+
+    .footer_logo {
+        color: var(--white);
+    }
+
+    .footer_copy_link {
+        color: var(--white);
+    }
+}
+
 .footer-container {
     display: flex;
     flex-direction: column;
