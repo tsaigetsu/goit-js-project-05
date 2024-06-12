@@ -1,0 +1,81 @@
+.hero {
+    width: 360px;
+    height: 968px;
+    background-image: url(../img/dekorBgBig1x.png);
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0 0 24px;
+}
+
+.hero_headline {
+    font-family: var(--second-family);
+    font-size: 48px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.hero_span {
+    font-family: var(--second-family);
+    font-size: 48px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--accet-green);
+}
+
+.hero_button {
+    width: auto;
+    height: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.hero_text {
+    margin: 0px 20px 72px 20px;
+    width: auto;
+    height: auto;
+    text-transform: uppercase;
+}
+
+
+.hero_text_color {
+    color: var(--accet-green);
+}
+
+.social_list {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background-color: var(--light-grey);
+
+}
+
+.social_list_item {
+    font-family: var(--font-family);
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .social_list {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .social_list {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .hero-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+
+}
