@@ -38,6 +38,8 @@
     flex-direction: column;
     justify-content: center;
     width: 197px;
+    padding: 40px 60px 20px;
+    box-sizing: content-box;
 }
 
 .footer_copy_link {
@@ -49,12 +51,21 @@
     text-align: center;
     color: var(--black);
     width: 197px;
-    box-sizing: unset;
+    box-sizing: content-box;
 }
 
 @media screen and (min-width: 768px) {
     .footer_social_list {
         flex-direction: row;
+        margin-bottom: 0;
+    }
+
+    .footer_copy {
+        width: auto;
+    }
+
+    .footer_copy_link {
+        width: 100%;
     }
 }
 
@@ -71,6 +82,7 @@
 
     .footer_copy {
         width: auto;
+        box-sizing: border-box;
     }
 
     .footer_copy_link {
