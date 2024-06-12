@@ -75,10 +75,11 @@
 
     .footer_copy {
         width: auto;
+        align-items: flex-end;
     }
 
     .footer_copy_link {
-        width: 100%;
+        width: auto;
     }
 }
 
@@ -96,6 +97,7 @@
     .footer_copy {
         width: auto;
         box-sizing: border-box;
+        align-items: flex-end;
     }
 
     .footer_copy_link {
