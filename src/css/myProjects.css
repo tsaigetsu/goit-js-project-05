@@ -1,5 +1,6 @@
-.myProjects-container {
-  padding: 80px 0;
+.container {
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .myProjects-title {
@@ -18,32 +19,17 @@
   color: #00b068;
 }
 
-.myProjects-btn {
-  display: block;
-  margin: 0 auto;
-  margin-top: 40px;
-  background-color: #f0f0f0;
-  padding: 12px 24px;
-  color: #292929;
-  font-family: Poppins;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 1.6;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  border: none;
-}
-
-.project-container {
+.projects-list {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 40px;
 }
 
-.info-container {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
+.myProjectImg {
+  width: 320px;
+  height: 184px;
+  border-radius: 16px;
 }
 
 .project-tech {
@@ -66,4 +52,71 @@
   line-height: 1.25;
   letter-spacing: 0.01em;
   text-transform: uppercase;
+}
+
+.my-project-link-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.my-project-link {
+  margin-top: 16px;
+  background-color: #e4e5e6;
+  border-radius: 8px;
+  color: #292929;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 12px 24px;
+  width: 125px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+}
+
+.icon-arrow {
+  margin-left: 12px;
+}
+
+.myProjects-btn {
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+  background-color: #f0f0f0;
+  padding: 12px 24px;
+  color: #292929;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  border: none;
+  position: relative;
+}
+
+.myProjects-btn:hover {
+  color: #00b068;
+}
+
+.btn-loadmore::after {
+  width: 70%;
+  content: '';
+  height: 2px;
+  border-radius: 2px;
+  background: #00b068;
+  position: absolute;
+  left: 24px;
+  bottom: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .myProjectImg {
+    width: 704px;
+    height: 404px;
+    border-radius: 24px;
+  }
 }
