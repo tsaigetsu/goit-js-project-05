@@ -1,13 +1,21 @@
 .hero {
     width: 360px;
-    height: 968px;
-    background-image: url(../img/dekorBgBig1x.png);
+    height: 952px;
+    
 }
 
 .hero-container {
     display: flex;
     flex-direction: column;
     padding: 40px 0 0 24px;
+}
+
+.hero_decor_bg {
+    width: 320px;
+    height: 740px;
+background-image: url(../img/dekorBgBig1x.png);
+background-repeat: no-repeat;
+background-position: -32px 11px;
 }
 
 .hero_headline {
@@ -27,10 +35,16 @@
 }
 
 .hero_button {
+    display: flex;
     width: auto;
     height: auto;
     margin-top: 40px;
     margin-bottom: 40px;
+}
+
+.hero_button_arrow::after {
+background-image: url(../img/Arrow1.png);
+background-repeat: no-repeat;
 }
 
 .hero_text {
