@@ -1,4 +1,4 @@
-.container {
+.my-projects-container {
   background-color: #f0f0f0;
   padding-top: 80px;
   padding-bottom: 80px;
@@ -81,6 +81,7 @@
   height: 48px;
   display: flex;
   align-items: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .my-project-link:hover {
@@ -106,6 +107,7 @@
   text-transform: uppercase;
   border: none;
   position: relative;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .myProjects-btn:hover {
@@ -124,7 +126,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .container {
+  .my-projects-container {
     padding-top: 124px;
     padding-bottom: 124px;
   }
@@ -168,7 +170,7 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .container {
+  .my-projects-container {
     padding-top: 164px;
     padding-bottom: 164px;
   }
