@@ -17,13 +17,72 @@
   
   <link rel="icon" href="/goit-js-project-05/assets/favicon-c79c9faf.svg" />
   <script type="module" crossorigin src="/goit-js-project-05/commonHelpers.js"></script>
-  <link rel="stylesheet" href="/goit-js-project-05/assets/index-740b2900.css">
+  <link rel="stylesheet" href="/goit-js-project-05/assets/index-67a8adc9.css">
 </head>
 
 <body>
   <header class="header" id="header">
+  <div class="header_container container">
+    <nav class="header_nav">
+      <a class="header_logo"
+        >lloyd<span class="header_logo-span">jefferson</span></a
+      >
+      <ul class="header_nav-list">
+        <li class="header_nav-item">
+          <a href="#" class="header_nav-link">About me</a>
+        </li>
+        <li class="header_nav-item">
+          <a href="#" class="header_nav-link">Projects</a>
+        </li>
+        <li class="header_nav-item">
+          <a href="#" class="header_nav-link">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header_buttons">
+        <input type="checkbox" id="header_darkmode-toggle" />
+        <label
+          for="header_darkmode-toggle"
+          class="header_darkmode-toggle_label"
+        ></label>
+        <button
+          class="header_open-menu-btn"
+          type="button"
+          aria-label="Mobile menu open button"
+          aria-labelledby="mobile-menu"
+        >
+          <span class="burger-line"></span><span class="burger-line"></span
+          ><span class="burger-line"></span>
+        </button>
+    </div>
+  </div>
 </header>
 
+<div class="header_mobile-menu is-ope" id="mobile-menu">
+  <div class="header_mobile-menu_cont">
+    <!-- <button
+        class="header_mobile-menu_btn"
+        type="button"
+        aria-label="Mobile menu close button"
+      >
+        <svg class="header_mobile-menu_btn-icon" width="32" height="32">
+          <use href="./img/icons.svg#icon-close"></use>
+        </svg>
+      </button> -->
+
+    <ul class="header_mobile-menu_nav-list">
+      <li class="header_mobile-menu_nav-item">
+        <a href="#" class="header_mobile-menu_nav-link current">About me</a>
+      </li>
+      <li class="header_mobile-menu_nav-item">
+        <a href="#" class="header_mobile-menu_nav-link">Projects</a>
+      </li>
+      <li class="header_mobile-menu_nav-item">
+        <a href="#" class="header_mobile-menu_nav-link">Contacts</a>
+      </li>
+    </ul>
+  </div>
+</div>
 <!--
     Внимательно проверяем файл styles.css и смотрим, что там прописано, чтобы не придумывать заново велосипед, а использовать руты и стандартный контейнер. 
     Название и id секции не меняем, работаем только со своим html и css партиалами. 
@@ -32,6 +91,7 @@
     Название пуша должна содержать название секции, название элемента над которым работаете и номер обновления.
     Пример: header_html_nr3, hero_css_nr7, footere_adaptive_nr13
 -->
+
 
   <main>
     <!--
