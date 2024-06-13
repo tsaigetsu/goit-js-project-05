@@ -110,7 +110,7 @@
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.myProjects-btn:hover {
+.load-more-btn:hover {
   color: #00b068;
 }
 
