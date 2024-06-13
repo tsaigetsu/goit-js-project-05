@@ -58,19 +58,3 @@ function loadMore() {
 
 }
 loadMore();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
