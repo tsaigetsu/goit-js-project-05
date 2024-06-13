@@ -17,7 +17,6 @@ let currentIndex = 0;
 const projectLoad = 3;
 
 
-
 function projectsCreated(project) {
     return `<li>
     <picture>
@@ -58,19 +57,3 @@ function loadMore() {
 
 }
 loadMore();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
