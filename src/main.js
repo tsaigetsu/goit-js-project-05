@@ -12,7 +12,7 @@ const projects = [
 ];
 
 const projectsList = document.querySelector(".projects-list");
-const btnLoadMore = document.querySelector(".myProjects-btn");
+const btnLoadMore = document.querySelector(".load-more-btn");
 let currentIndex = 0;
 const projectLoad = 3;
 
@@ -23,7 +23,7 @@ function projectsCreated(project) {
 <source srcset="${project.imageSmall} 1x, ${project.imageLarge} 2x" media="(min-width: 1280px)">
 <source srcset="${project.imageSmallTab} 1x, ${project.imageLargeTab} 2x" media="(min-width: 768px)">
 <source srcset="${project.imageSmallMob} 1x, ${project.imageLargeMob} 2x" media="(min-width: 320px)">
-<img class="myProjectImg" src="${project.imageSmall}" alt="${project.name}">
+<img class="my-project-img" src="${project.imageSmall}" alt="${project.name}">
 </picture>
 <p class="project-tech">React, JavaScript, Node JS, Git</p>
 <div class="my-project-name-and-link-container">
