@@ -1,17 +1,17 @@
 .header {
     padding: 20px 0;
-    background-color: var(--white);
+    height: 64px;
+    width: 100%;
+    /* position: fixed; */
+    z-index: 100;
 }
 .header_container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.header_nav {
-    
-}
+
 .header_logo {
-    color: var(--black);
 font-family: Impact,sans-serif;
 font-size: 24px;
 font-weight: 400;
@@ -22,6 +22,15 @@ text-transform: uppercase;
 .header_logo-span {
     color: var(--accet-green);
 }
+.header_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_nav-list {
+    display: none;
+}
+
 /* Перемикач Darkmode */
 
 .header_darkmode-toggle_label {
@@ -71,14 +80,6 @@ text-transform: uppercase;
 } */
 
 
-.header_nav-list {
-    display: none;
-}
-.header_nav-item {
-}
-.header_nav-link {
-}
-
 /* Burger Button */
 .header_open-menu-btn {
     background-color: transparent;
@@ -99,14 +100,14 @@ text-transform: uppercase;
     width: 24px;
     margin: 2px;
 }
-.header_open-menu-btn:hover span:nth-child(1) {
+.first {
     transform: translate(4.5px,-2px) rotate(45deg);
     transform-origin: left top;
 }
-.header_open-menu-btn:hover span:nth-child(2) {
+.middle {
     transform: scale(0);
 }
-.header_open-menu-btn:hover span:nth-child(3) {
+.last {
     transform: translate(-2.5px, -14.5px) rotate(-45deg);
     transform-origin: right bottom;
 }
@@ -155,10 +156,8 @@ text-transform: uppercase;
     align-items: center;
     gap: 24px;
 }
-.header_mobile-menu_nav-item {
-}
 .header_mobile-menu_nav-link {
-    color: var(--black);
+    /* color: var(--black); */
     font-family: var(--font-family);
     font-size: 16px;
     font-weight: 300;
@@ -167,3 +166,49 @@ text-transform: uppercase;
 }
 .current {
 }
+
+/* Dark Mode */
+.dark-mode-on {
+  .burger-line {
+    background-color: var(--white);
+  }
+  .header_mobile-menu_cont {
+    background-color: #1E2023;
+  }
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        width: 100%;
+        height: 96px;
+        padding: 32px 0;
+    }
+    .header_logo {
+        font-size: 32px;
+    }
+    .header_nav {
+        
+    }
+    .header_nav-list {
+        display: flex;
+        gap: 40px;
+    }
+    .header_nav-item {
+    }
+    .header_nav-link {
+        font-family: Poppins,sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.5;
+        letter-spacing: 0.5px;
+    }
+    .header_darkmode-toggle_label {
+        margin-right: 40px;
+    }
+    .header_open-menu-btn {
+        display: none;
+    }
+}
+/* @media screen and (min-width: 1280px) {
+
+} */
