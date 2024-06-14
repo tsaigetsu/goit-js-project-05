@@ -1,0 +1,227 @@
+
+.workTogether {
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    background: #F0F0F0;
+
+}
+
+.workTogether-container {
+   
+}
+
+.workTogether-title {
+color:#292929;
+    font-family: Impact;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.23;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.workTogether-span {
+color: #00B068;
+}
+
+.workTogether-content {
+display: flex;
+    width: 320px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    padding-bottom: 40px;
+}
+
+.workTogether-text {
+color: #292929;
+font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.workTogether-contacts {
+font-style: normal;
+
+    
+}
+
+.workTogether-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+.workTogether-list-item {
+display: flex;
+align-items: flex-start;
+}
+.workTogether-link {
+    margin-left: 16px;
+}
+.workTogether-form {
+
+}
+
+.workTogether-form-input {
+    display: flex;
+    width: 320px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.workTogether-input {
+    display: flex;
+    height: 48px;
+    padding: 16px;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    max-width: 360px;
+    border-radius: 8px;
+    border: none;
+    background: #E4E5E6;
+    color: rgba(41, 41, 41, 0.40);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+}
+
+.workTogether-input:hover {
+    
+}
+
+.workTogether-input-label {}
+
+.workTogether-textarea-label {}
+
+.workTogether-textarea {}
+
+.workTogether-button {}
+.workTogether {
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    background: #F0F0F0;
+
+}
+
+.workTogether-container {
+   
+}
+
+.workTogether-title {
+color:#292929;
+    font-family: Impact;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.23;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.workTogether-span {
+color: #00B068;
+}
+
+.workTogether-content {
+display: flex;
+    width: 320px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    padding-bottom: 40px;
+}
+
+.workTogether-text {
+color: #292929;
+font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.workTogether-contacts {
+font-style: normal;
+
+    
+}
+
+.workTogether-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+.workTogether-list-item {
+display: flex;
+align-items: flex-start;
+}
+.workTogether-link {
+    margin-left: 16px;
+}
+.workTogether-form {
+
+}
+
+.workTogether-form-input {
+    display: flex;
+    width: 320px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.workTogether-input {
+    display: flex;
+    height: 48px;
+    padding: 16px;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    max-width: 360px;
+    border-radius: 8px;
+    border: none;
+    background: #E4E5E6;
+    color: rgba(41, 41, 41, 0.40);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+}
+
+.workTogether-input:hover {
+    
+}
+
+.workTogether-input-label {}
+
+.workTogether-textarea-label {}
+
+.workTogether-textarea {}
+
+.workTogether-button {}
