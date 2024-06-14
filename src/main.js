@@ -1,3 +1,9 @@
+import { darkMode } from './js/darkMode'
+import { mobileMenu } from './js/mobileMenu'
+
+darkMode()
+mobileMenu()
+
 const projects = [
     { imageSmall: `./img/my-projects/project1(1x).jpg`, imageLarge: `./img/my-projects/project1(2x).jpg`, imageSmallMob: `./img/my-projects/project1mob(1x).jpg`, imageLargeMob: `./img/my-projects/project1mob(2x).jpg`, imageSmallTab: `./img/my-projects/project1tab(1x).jpg`, imageLargeTab: `./img/my-projects/project1tab(2x).jpg`, name: `wallet webservice`, link: `https://github.com/tsaigetsu/goit-js-project-05` },
     { imageSmall: `./img/my-projects/project2(1x).jpg`, imageLarge: `./img/my-projects/project2(2x).jpg`,imageSmallMob: `./img/my-projects/project2mob(1x).jpg`, imageLargeMob: `./img/my-projects/project2mob(2x).jpg`, imageSmallTab: `./img/my-projects/project2tab(1x).jpg`, imageLargeTab: `./img/my-projects/project2tab(2x).jpg`, name:`green harvest webservice`, link: `https://github.com/tsaigetsu/goit-js-project-05` },
