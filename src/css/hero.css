@@ -38,18 +38,34 @@ font-family: var(--second-family);
     color: var(--accet-green);
 }
 
-.hero_button {
+.hero_button_ref {
+    align-items: center;
+    position: relative;
+    /* z-index: 1; */
     display: flex;
-    width: 320px;
+      width: 320px;
     height: 92px;
     margin-top: 40px;
     margin-bottom: 40px;
 }
 
-.hero_button::before{
-background: url(../img/Arrow1.png) no-repeat;
+.hero_button_arrow {
+    width: 28px;
+    height: 28px;
+    background: url(../img/Arrow1.png) no-repeat center;
+     position: absolute;
+    z-index: 1;
+    left: 4px;
 }
 
+.hero_button_rectangle {
+    width: 165px;
+    height: 92px;
+    position: absolute;
+       z-index: -1;
+    background: url(../img/Rectangle.png) no-repeat;
+left: 150px;
+}
 .hero_text {
     margin: 0px 20px;
     width: auto;
@@ -57,6 +73,13 @@ background: url(../img/Arrow1.png) no-repeat;
     text-transform: uppercase;
 }
 
+.btn_txt {
+    width: 185px;
+    margin: 0;
+    position: absolute;
+    left: 44px;
+        z-index: 1;
+}
 
 .hero_text_color {
     color: var(--accet-green);
