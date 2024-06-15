@@ -63,9 +63,6 @@ left: 150px;
 }
 
 .hero_text {
-    margin: 0px 20px;
-    width: auto;
-    height: auto;
     text-transform: uppercase;
 }
 
@@ -102,6 +99,11 @@ left: 150px;
     .hero_title {
     font-size: 136px;
     }
+
+    .hero_text {
+    font-size: 20px;
+    }
+
     .social_list {
         flex-direction: row;
     }
