@@ -1,0 +1,186 @@
+.benefits {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.benefits .container {
+  max-width: 320px;
+}
+
+.benefits_title {
+  margin-bottom: 40px;
+  font-family: Impact;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 1.23em;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.benefits_title_span {
+  color: var(--accet-green);
+}
+
+.benefits_list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.benefits_item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 320px;
+}
+
+.benefits_icon_background {
+  position: relative;
+  border-radius: 8px;
+  width: 48px;
+  height: 48px;
+  background-color: #00b0681a;
+}
+
+.benefits_icon {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  fill: none;
+  flex-shrink: 0;
+  stroke: var(--accet-green);
+}
+
+.benefit_title {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55em;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.benefit_text {
+  font-family: Poppins;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5em;
+  letter-spacing: 0.03em;
+  font-style: normal;
+  color: var(--black);
+}
+
+/* --------------------------Tablet-------------------------- */
+
+@media screen and (min-width: 768px) {
+  .benefits .container {
+    padding-left: 32px;
+    padding-right: 32px;
+    max-width: 768px;
+  }
+
+  .benefits_title {
+    margin-bottom: 0;
+    font-size: 108px;
+    line-height: 1.14em;
+    letter-spacing: 0.01em;
+  }
+
+  .benefits_item:first-child {
+    margin-left: 368px;
+  }
+
+  .benefits_list {
+    margin-top: -20px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 32px;
+    flex-wrap: wrap;
+    width: 704px;
+  }
+
+  .benefits_item {
+    width: 336px;
+  }
+
+  .benefit_title {
+    font-size: 20px;
+    line-height: 1.6em;
+  }
+
+  .benefit_text {
+    width: 336px;
+  }
+}
+
+/* --------------------------Desktop--------------------------- */
+@media screen and (min-width: 1280px) {
+  .benefits .container {
+    max-width: 1280px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .benefits_container {
+    position: relative;
+  }
+
+  .benefits_background_image {
+    background-image: url('../img/benefits-background-image.svg');
+    z-index: 1;
+    position: absolute;
+    width: 526px;
+    height: 408px;
+    top: -140px;
+    right: 32px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .benefits_title {
+    margin-bottom: -96px;
+    width: 681px;
+    height: 372px;
+  }
+
+  .benefits_item:first-child {
+    margin-left: 832px;
+  }
+
+  .benefits_list {
+    width: 1216px;
+    height: 400px;
+  }
+
+  .benefits_item {
+    width: 384px;
+  }
+
+  .benefit_text {
+    width: 384px;
+    height: 72px;
+    color: var(--black);
+  }
+}
+
+/* ------------------------Dark theme-------------------------- */
+
+.dark-mode-on {
+  background-color: var(--black);
+
+  .benefits_title {
+    color: var(--white);
+  }
+
+  .benefit_title {
+    color: var(--white);
+  }
+
+  .benefit_text {
+    color: var(--white);
+  }
+}
