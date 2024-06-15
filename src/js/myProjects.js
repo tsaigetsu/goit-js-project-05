@@ -42,12 +42,9 @@ const projectLoad = 3;
 
 function projectsCreated(project) {
     return `<li>
-    <picture>
-<source srcset="${project.imageSmall} 1x, ${project.imageLarge} 2x" media="(min-width: 1280px)">
-<source srcset="${project.imageSmallTab} 1x, ${project.imageLargeTab} 2x" media="(min-width: 768px)">
-<source srcset="${project.imageSmallMob} 1x, ${project.imageLargeMob} 2x" media="(min-width: 320px)">
-<img class="my-project-img" src="${project.imageSmall}" alt="${project.name}">
-</picture>
+
+<img class="my-project-img" src="${project.imageSmall}" srcset ="${project.imageSmall} 1x, ${project.imageLarge} 2x" alt="${project.name}">
+
 <p class="project-tech">React, JavaScript, Node JS, Git</p>
 <div class="my-project-name-and-link-container">
 <h3 class="project-name">${project.name}</h3>
