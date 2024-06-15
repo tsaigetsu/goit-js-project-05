@@ -18,6 +18,8 @@ import project9  from '/img/my-projects/project9(1x).jpg';
 import project9_2x from '/img/my-projects/project9(2x).jpg';
 import project10  from '/img/my-projects/project10(1x).jpg';
 import project10_2x from '/img/my-projects/project10(2x).jpg';
+import icon_svg from '/public/symbol-defs.svg';
+
 
 
 
@@ -41,16 +43,14 @@ const projectLoad = 3;
 
 
 function projectsCreated(project) {
-    return `<li>
-
-<img class="my-project-img" src="${project.imageSmall}" srcset ="${project.imageSmall} 1x, ${project.imageLarge} 2x" alt="${project.name}">
-
+  return `<li>
+  <img class="my-project-img" src="${project.imageSmall}" srcset ="${project.imageSmall} 1x, ${project.imageLarge} 2x" alt="${project.name}">
 <p class="project-tech">React, JavaScript, Node JS, Git</p>
 <div class="my-project-name-and-link-container">
 <h3 class="project-name">${project.name}</h3>
 <div class="my-project-link-container">
 <a class="my-project-link" href="${project.link}">Visit<svg class="icon-arrow" width="24" height="24">
-    <use href="./public/symbol-defs.svg#icon-greenArrow"></use>
+    <use href="${icon_svg}#icon-greenArrow"></use>
   </svg></a>
   </div>
   </div>
