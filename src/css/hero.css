@@ -61,6 +61,7 @@ font-family: var(--second-family);
     background: url(../img/Rectangle.png) no-repeat;
 left: 150px;
 }
+
 .hero_text {
     margin: 0px 20px;
     width: auto;
@@ -98,6 +99,9 @@ left: 150px;
 }
 
 @media screen and (min-width: 768px) {
+    .hero_title {
+    font-size: 136px;
+    }
     .social_list {
         flex-direction: row;
     }
