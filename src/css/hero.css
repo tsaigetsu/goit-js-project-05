@@ -1,3 +1,10 @@
+@font-face {
+    font-family: "Impact";
+        font-style: normal;
+        font-weight: normal;
+            src:             url(/fonts/impact.ttf) format("ttf"),
+}
+
 .dark {
     .hero_title_headline {
         color: var(--white);
