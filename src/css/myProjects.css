@@ -201,3 +201,40 @@
     margin-top: 80px;
   }
 }
+
+/* ==== DARK MODE ==== */
+
+.dark-mode-on {
+  .my-projects-container {
+    background-color: #2a2d32;
+  }
+
+  .my-projects-title {
+    color: #f0f0f0;
+  }
+
+  .project-tech {
+    color: #f0f0f0;
+  }
+
+  .project-name {
+    color: #f0f0f0;
+  }
+  .my-project-link {
+    color: #f0f0f0;
+    background-color: #2a2d32;
+  }
+
+  .my-project-link:hover {
+    background-color: #3b3f45;
+  }
+
+  .load-more-btn {
+    color: #f0f0f0;
+    background-color: #2a2d32;
+  }
+
+  .load-more-btn:hover {
+    color: #14c57c;
+  }
+}
