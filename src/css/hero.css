@@ -1,9 +1,15 @@
+@font-face {
+    font-family: "Impact";
+        font-style: normal;
+        font-weight: normal;
+            src:             url(/fonts/impact.ttf) format("ttf"),
+}
 
-/* .hero-container {
-    display: flex;
-    flex-direction: column;
-    padding: 40px 0 0 24px;
-} */
+.dark {
+    .hero_title_headline {
+        color: var(--white);
+    }
+}
 
 .hero_decor_bg {
     position: absolute;
@@ -12,7 +18,7 @@
 background: url(../img/dekorBgBig1x.png)no-repeat ,
 url(../img/dekorBgSmall1x.png)no-repeat
 ;
-background-position: -32px 11px, 144px 350px;
+background-position: -2px 11px, 144px 330px;
 filter: blur(2px);
     z-index: 1;
 }
@@ -25,7 +31,7 @@ filter: blur(2px);
 .hero_title {
     margin-top: 96px;
 font-family: var(--second-family);
-    font-size: 48px;
+    font-size: 64px;
     letter-spacing: 0.05em;
     text-transform: uppercase;
 }
@@ -41,7 +47,7 @@ font-family: var(--second-family);
 .hero_button_ref {
     align-items: center;
     position: relative;
-    /* z-index: 1; */
+    z-index: 1;
     display: flex;
       width: 320px;
     height: 92px;
@@ -52,7 +58,7 @@ font-family: var(--second-family);
 .hero_button_arrow {
     width: 28px;
     height: 28px;
-    background: url(../img/Arrow1.png) no-repeat center;
+    background: url(../img/Arrow1mob.png) no-repeat center;
      position: absolute;
     z-index: 1;
     left: 4px;
@@ -63,20 +69,16 @@ font-family: var(--second-family);
     height: 92px;
     position: absolute;
        z-index: -1;
-    background: url(../img/Rectangle.png) no-repeat;
+    background: url(../img/hero/Rectangle.png) no-repeat;
 left: 150px;
 }
+
 .hero_text {
-    margin: 0px 20px;
-    width: auto;
-    height: auto;
     text-transform: uppercase;
 }
 
 .btn_txt {
-    width: 185px;
-    margin: 0;
-    position: absolute;
+      position: absolute;
     left: 44px;
         z-index: 1;
 }
@@ -103,8 +105,35 @@ left: 150px;
 }
 
 @media screen and (min-width: 768px) {
+    .hero_title {
+    font-size: 136px;
+    justify-content: center;
+    }
+
+.hero_button_ref {
+    width: 416px;
+    height: 96px;
+    margin-top: 60px;
+}
+
+.hero_decor_bg {
+     background: url(../img/hero/decorTabTop.png)no-repeat,
+        url(../img/hero/decorTabBottom.png)no-repeat;
+    background-position: 348px 0, 124px 480px;
+   
+}
+
+.hero_button_rectangle {
+width: 261px;
+background:url(../img/hero/RectangleTab.png) no-repeat;
+  }
+    .hero_text {
+    font-size: 20px;
+    }
+
     .social_list {
         flex-direction: row;
+        justify-content: center;
     }
 }
 
@@ -113,6 +142,9 @@ left: 150px;
         margin-top: 0;
         margin-bottom: 0;
     }
+ /* @media (min-device-pixel-ratio: 2),
+ (min-resolution: 192dpi),
+ (min-resolution: 2dppx) {} */
 
     .hero-container {
         flex-direction: row;
