@@ -29,6 +29,9 @@
   --second-family: "Impact", sans-serif;
   --third-family: "Montserrat", sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: var(--white);
   color: var(--black);

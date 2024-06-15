@@ -74,13 +74,9 @@ text-transform: uppercase;
 .header_darkmode-toggle_label, .header_darkmode-toggle_label::after {
     transition: 0.3s;
 }
-/* #header_darkmode-toggle:checked + .header_darkmode-toggle_label + body {
-    background-color: #1E2023;
-    --accet-green: orange;
-} */
-
 
 /* Burger Button */
+
 .header_open-menu-btn {
     background-color: transparent;
     border: none;
@@ -131,6 +127,7 @@ text-transform: uppercase;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+    z-index: 1000;
 }
 .is-open {
   opacity: 1;
@@ -145,7 +142,6 @@ text-transform: uppercase;
     top: 64px;
     right: 0;
     overflow: auto;
-    z-index: 1000;
     display: flex;
     justify-content: center;
 }
@@ -164,9 +160,9 @@ text-transform: uppercase;
     line-height: 1.5; 
     letter-spacing: 0.5px;
 }
-.current {
+.header_overflow-hidden {
+    overflow: hidden;
 }
-
 /* Dark Mode */
 .dark-mode-on {
   .burger-line {
@@ -186,14 +182,9 @@ text-transform: uppercase;
     .header_logo {
         font-size: 32px;
     }
-    .header_nav {
-        
-    }
     .header_nav-list {
         display: flex;
         gap: 40px;
-    }
-    .header_nav-item {
     }
     .header_nav-link {
         font-family: Poppins,sans-serif;
@@ -209,6 +200,3 @@ text-transform: uppercase;
         display: none;
     }
 }
-/* @media screen and (min-width: 1280px) {
-
-} */
