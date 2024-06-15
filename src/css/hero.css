@@ -47,7 +47,7 @@ font-family: var(--second-family);
 .hero_button_arrow {
     width: 28px;
     height: 28px;
-    background: url(../img/Arrow1.png) no-repeat center;
+    background: url(../img/Arrow1mob.png) no-repeat center;
      position: absolute;
     z-index: 1;
     left: 4px;
@@ -58,7 +58,7 @@ font-family: var(--second-family);
     height: 92px;
     position: absolute;
        z-index: -1;
-    background: url(../img/Rectangle.png) no-repeat;
+    background: url(../img/hero/Rectangle.png) no-repeat;
 left: 150px;
 }
 
@@ -98,6 +98,7 @@ left: 150px;
 @media screen and (min-width: 768px) {
     .hero_title {
     font-size: 136px;
+    justify-content: center;
     }
 
     .hero_text {
