@@ -67,9 +67,7 @@ left: 150px;
 }
 
 .btn_txt {
-    width: 185px;
-    margin: 0;
-    position: absolute;
+      position: absolute;
     left: 44px;
         z-index: 1;
 }
@@ -101,6 +99,14 @@ left: 150px;
     justify-content: center;
     }
 
+.hero_button_ref {
+    width: 416px;
+    height: 96px;
+}
+
+.hero_button_rectangle {
+width: 261px;
+}
     .hero_text {
     font-size: 20px;
     }
