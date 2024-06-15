@@ -29,6 +29,19 @@
   --second-family: "Impact", sans-serif;
   --third-family: "Montserrat", sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: var(--white);
+  color: var(--black);
+  transition: 0.3s;
+}
+
+.dark-mode-on {
+  background-color: #1E2023;
+  color: var(--white);
+}
 
 .container {
   margin: 0 auto;

@@ -1,0 +1,202 @@
+.header {
+    padding: 20px 0;
+    height: 64px;
+    width: 100%;
+    /* position: fixed; */
+    z-index: 100;
+}
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_logo {
+font-family: Impact,sans-serif;
+font-size: 24px;
+font-weight: 400;
+line-height: 1.0;
+letter-spacing: 1.5px;
+text-transform: uppercase;
+}
+.header_logo-span {
+    color: var(--accet-green);
+}
+.header_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_nav-list {
+    display: none;
+}
+
+/* Перемикач Darkmode */
+
+.header_darkmode-toggle_label {
+    width: 48px;
+    height: 24px;
+    position: relative;
+    background-color: var(--light-grey);
+    display: block;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: 0.3s;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.header_darkmode-toggle_label::after{
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    background-color: var(--accet-green);
+    border-radius: 20px;
+    transition: 0.3s;
+}
+#header_darkmode-toggle {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+#header_darkmode-toggle:checked + .header_darkmode-toggle_label{
+    background-color: #2A2D32;
+}
+#header_darkmode-toggle:checked + .header_darkmode-toggle_label::after{
+    margin: -6px 0 6px 0;
+    box-shadow: 5px 5px 0 0 var(--accet-green);
+    background-color: #2A2D32;
+    left: 40px;
+    transform: translateX(-100%);
+}
+.header_darkmode-toggle_label, .header_darkmode-toggle_label::after {
+    transition: 0.3s;
+}
+
+/* Burger Button */
+
+.header_open-menu-btn {
+    background-color: transparent;
+    border: none;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+.burger-line {
+    transition: all 0.3s;
+    border-radius: 1px;
+    height: 2px;
+    background-color: var(--black);
+    width: 24px;
+    margin: 2px;
+}
+.first {
+    transform: translate(4.5px,-2px) rotate(45deg);
+    transform-origin: left top;
+}
+.middle {
+    transform: scale(0);
+}
+.last {
+    transform: translate(-2.5px, -14.5px) rotate(-45deg);
+    transform-origin: right bottom;
+}
+
+.header_buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Mobile Menu */
+
+.header_mobile-menu {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 64px;
+    left: 0;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 1000;
+}
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+}
+.header_mobile-menu_cont {
+    background-color: var(--white);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 64px;
+    right: 0;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+}
+.header_mobile-menu_nav-list {
+    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+.header_mobile-menu_nav-link {
+    /* color: var(--black); */
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5; 
+    letter-spacing: 0.5px;
+}
+.header_overflow-hidden {
+    overflow: hidden;
+}
+/* Dark Mode */
+.dark-mode-on {
+  .burger-line {
+    background-color: var(--white);
+  }
+  .header_mobile-menu_cont {
+    background-color: #1E2023;
+  }
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        width: 100%;
+        height: 96px;
+        padding: 32px 0;
+    }
+    .header_logo {
+        font-size: 32px;
+    }
+    .header_nav-list {
+        display: flex;
+        gap: 40px;
+    }
+    .header_nav-link {
+        font-family: Poppins,sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.5;
+        letter-spacing: 0.5px;
+    }
+    .header_darkmode-toggle_label {
+        margin-right: 40px;
+    }
+    .header_open-menu-btn {
+        display: none;
+    }
+}
