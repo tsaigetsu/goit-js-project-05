@@ -21,13 +21,13 @@
     
     <link rel="icon" href="/goit-js-project-05/assets/favicon-c79c9faf.svg" />
     <script type="module" crossorigin src="/goit-js-project-05/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/goit-js-project-05/assets/index-57145a26.css">
+    <link rel="stylesheet" href="/goit-js-project-05/assets/index-94d643f2.css">
   </head>
 
   <body>
     <header class="header" id="header">
   <div class="header_container container">
-    <a class="header_logo"
+    <a href="./index.html" class="header_logo"
         >lloyd<span class="header_logo-span">jefferson.</span></a
       >
     <nav class="header_nav">
@@ -97,27 +97,34 @@
     Пример: header_html_nr3, hero_css_nr7, footere_adaptive_nr13
 -->
 <section class="hero" id="hero">
-  <div class="hero_decor_bg"></div>
   <div class="container hero_content">
     <h1 class="hero_title">
-      <span class="hero_title_headline">HELLO, I AM</span> <br />
-      <span class="hero_title_span">FULLSTACK DEVELOPER</span>
+      hello, i am<picture class="hero_image-container">
+        <source srcset="/goit-js-project-05/assets/img-7b2efba4.jpg 1x, /goit-js-project-05/assets/img@2x-c56d506c.jpg " />
+        <img
+          class="hero_image"
+          src="/goit-js-project-05/assets/img-7b2efba4.jpg"
+          alt="Lloyd Jefferson"
+          width="108"
+        /> </picture
+      ><span class="hero_title_span">FULLSTACK DEVELOPER</span>
     </h1>
     <!-- button -->
-    <a class="hero_button_ref" href="#">
-      <div class="hero_button_arrow"></div>
-      <div class="hero_text btn_txt">Order the project</div>
+    <div class="hero_button-and-text">
+      <a href="#workTogether" class="hero_text btn_txt">
+        <svg class="hero_icon">
+          <use href="/goit-js-project-05/assets/symbol-defs-0e902c91.svg#icon-hero_arrow"></use>
+        </svg>Order the project
+      </a>
 
-      <div class="hero_button_rectangle"></div>
-    </a>
-
-    <!-- text -->
-    <p class="hero_text">
-      I work with people all over the world to create
-      <span class="hero_text_color">impressive</span> and
-      <span class="hero_text_color">functional websites</span> that reflect each
-      client's unique personality.
-    </p>
+      <!-- text -->
+      <p class="hero_text hero_descr">
+        I work with people all over the world to create
+        <span class="hero_text_color">impressive</span> and
+        <span class="hero_text_color">functional websites</span> that reflect
+        each client's unique personality.
+      </p>
+    </div>
   </div>
 
   <!-- social media -->
@@ -554,7 +561,7 @@
 
     </main>
 
-    <footer class="footer dark" id="footer">
+    <footer class="footer" id="footer">
     <div class="container footer-container">
         <a class="footer_logo">
             LLOYD<span class="footer_logo_span">JEFFERSON.</span>
