@@ -57,9 +57,7 @@
 <symbol id="icon-up_dropdown" viewBox="0 0 32 32">
 <path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M24 20l-8-8-8 8"></path>
 </symbol>
-<<<<<<< Updated upstream
 
-=======
 <symbol id="icon-x" viewBox="0 0 32 32">
 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.667" d="M24 8 8 24M8 8l16 16"/>
 </symbol>
