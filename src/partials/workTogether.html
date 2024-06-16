@@ -6,30 +6,30 @@
 <address class="workTogether-contacts">
     <ul class="workTogether-list">
         <li class="workTogether-list-item"> <svg class="workTogether-icon" width="24" height="24">
-          <use href="../public/symbol-defs.svg#icon-phone"></use>
+          <use href="./public/symbol-defs.svg#icon-phone"></use>
         </svg> <a class="workTogether-link" href="tel:+380904567890" target="_blank" rel="noopener noreferrer">+38 090 456 78 90 </a></li>
         <li class="workTogether-list-item"> <svg class="workTogether-icon" width="24" height="24">
-          <use href="../public/symbol-defs.svg#icon-mail"></use>
+          <use href="./public/symbol-defs.svg#icon-mail"></use>
         </svg> <a class="workTogether-link" href="mailto:lloydjefferson@gmail.com" target="_blank" rel="noopener noreferrer" >lloydjefferson@gmail.com</a></li>
         <li class="workTogether-list-item"> <svg class="workTogether-icon" width="24" height="24">
-          <use href="../public/symbol-defs.svg#icon-map"></use>
+          <use href="./public/symbol-defs.svg#icon-map"></use>
         </svg> <a class="workTogether-link" href="http://www.google.com/maps/place/New+York,+NY,+USA" target="_blank" rel="noopener noreferrer"></a> USA, New York</li>
 </ul>
 </address>
         </div>
 <form class="workTogether-form" name="workTogether-form">
-    <div class="workTogether-form-input">
-<input class="workTogether-input" type="email" name="email" placeholder pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$">
-<label for="email" class="workTogether-input-label"></label>
-<svg class="workTogether-inp-icon" width="16" height="16">
-  <use href="../public/symbol-defs.svg#icon-ep_success-filled"></use>
-</svg>
+   <div class="workTogether-form-input">
+<input class="workTogether-input" type="email" name="email" placeholder="Your email*"
+  pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" required>
+  <svg class="workTogether-inp-icon" width="16" height="16">
+    <use href="./public/symbol-defs.svg#icon-ep_success-filled"></use>
+  </svg>
+<p class="workTogether-error-message">Invalid email, try again</p>
+   </div> 
+<div class="workTogether-textarea-container">
+<textarea class="workTogether-textarea" name="message" placeholder="Message"></textarea>
 </div>
-<div class="workTogether-textarea-label">
-  <textarea class="workTogether-textarea" name="message" placeholder ></textarea>
-<label for="message" class="workTogether-textarea-label"></label>  
-</div>
-
+    
 <button class="workTogether-button" type="submit">Send message</button>
   
 </form>
