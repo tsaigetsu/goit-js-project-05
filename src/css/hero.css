@@ -87,7 +87,11 @@
   font-family: var(--font-family);
   text-align: center;
 }
-
+.dark-mode-on {
+  .social_list {
+    background-color: #2A2D32;
+  }
+}
 @media screen and (min-width: 768px) {
     .hero {
         padding-top: 184px;
