@@ -230,6 +230,6 @@
   }
 
   .load-more-btn:hover {
-    color: rgba(120, 0, 176, 0.2);
+    color: var(--accet-green);
   }
 }
