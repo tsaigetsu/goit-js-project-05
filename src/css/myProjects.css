@@ -1,5 +1,4 @@
 .my-projects-container {
-  background-color: #f0f0f0;
   padding-top: 80px;
   padding-bottom: 80px;
 }
@@ -205,9 +204,6 @@
 /* ==== DARK MODE ==== */
 
 .dark-mode-on {
-  .my-projects-container {
-    background-color: #1e2023;
-  }
 
   .my-projects-title {
     color: #f0f0f0;
