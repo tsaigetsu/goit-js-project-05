@@ -6,7 +6,6 @@
 }
 
 .workTogether-title {
-  color: #292929;
   font-family: Impact;
   font-size: 52px;
   font-style: normal;
@@ -16,7 +15,9 @@
   text-transform: uppercase;
   margin-bottom: 40px;
 }
-
+.workTogether-span {
+    color: var(--accet-green);
+}
 .workTogether-content {
   display: flex;
   width: 320px;
@@ -27,7 +28,6 @@
 }
 
 .workTogether-text {
-  color: #292929;
   font-family: Poppins;
   font-size: 18px;
   font-style: normal;
@@ -51,7 +51,6 @@
   align-items: flex-start;
 }
 .workTogether-link {
-  color: #292929;
   font-family: Poppins;
   font-size: 16px;
   font-style: normal;
@@ -294,8 +293,6 @@
 }
 /* dark mode */
 .dark-mode-on {
-  background-color: var(--black);
-
   .workTogether-title {
     color: var(--white);
   }

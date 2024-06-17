@@ -130,7 +130,7 @@
   }
 
   .benefits_background_image {
-    background-image: url('../img/benefits-background-image.svg');
+    background-image: url('../img/benefits-background-image.png');
     z-index: 1;
     position: absolute;
     width: 526px;
