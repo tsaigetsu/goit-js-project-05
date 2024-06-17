@@ -1,3 +1,14 @@
+.dark-mode-on {
+  .faq-item.active {
+    background-color: #204136;
+  }
+  .faq-btn .faq-btn-open,
+.faq-btn .faq-btn-close {
+  stroke: var(--white);
+  fill: var(--white);
+}
+}
+
 .faq {
   padding-top: 40px;
   padding-bottom: 80px;
@@ -22,7 +33,6 @@
 }
 
 .faq-item {
-  background-color: #f0f0f0;
   border-radius: 0;
   padding: 28px 24px;
   border-bottom: 1px solid #cccccc;
@@ -37,7 +47,6 @@
 }
 
 .faq-item-title {
-  color: #292929;
   max-width: 224px;
   font-weight: 400;
   font-size: 18px;
@@ -63,7 +72,6 @@
 
 .faq-btn {
   background-color: transparent;
-
   border: 0;
   cursor: pointer;
   position: absolute;
@@ -75,6 +83,7 @@
 
 .faq-btn:hover,
 .faq-btn:focus {
+  background-color: transparent;
   outline: 0;
 }
 
