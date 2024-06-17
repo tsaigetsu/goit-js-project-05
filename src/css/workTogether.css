@@ -67,6 +67,8 @@ align-items: flex-start;
     line-height: 1.5;
     letter-spacing: 0.03em;
     margin-left: 16px;
+    
+
 }
 
 /* form */
@@ -309,10 +311,6 @@ color: #292929;
 .dark-mode-on {
     background-color: var(--black);
     
-        .benefits_title {
-            color: var(--white);
-        }
-    
         .workTogether-title {
             color: var(--white);
         }
@@ -348,4 +346,100 @@ color: #292929;
         .workTogether-input:not(:placeholder-shown):valid {
             color: var(--white);
                 }
+        .modal-content {
+            background: #2A2D32;
+        }
+        .modal-message {
+        background: #2A2D32;
+        }
+        .modal-title {
+        color: #14C57C;
+        }
+        .modal-text {
+        color: #F0F0F0;
+        }
+            }
+                /* modal */
+ .modal-overlay {
+opacity: 0.8;
+background: #292929;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: 1;
+display: flex;
+align-items: center;
+justify-content: center;
+pointer-events: none;
+visibility: hidden;
+transition: opacity 250ms ease, visibility 250ms ease;
+ }
+
+ .modal-content {
+    position: relative;
+    display: flex;
+    width: 320px;
+    padding: 48px 32px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 64px;
+    border-radius: 16px;
+    border: 1px solid rgba(250, 250, 250, 0.10);
+    background: #F0F0F0;
+    opacity: 1;
+    transition: visibility 250ms ease, opacity 250ms ease
+ }
+
+ .close-btn {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right: 16px;
+    top: 16px;
+    stroke: #2b2b2b;
+    fill: transparent;
+ }
+
+ .modal-message {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+ }
+
+ .modal-title {
+    color: #00B068;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+ }
+
+ .modal-text {
+    color: #292929;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+ }
+ @media screen and (min-width: 768px) {
+    .modal-content {
+    padding: 64px;
+    width: 492px;
+    }
+.close-btn {
+    right: 20px;
+    top: 20px;
+    stroke:#F0F0F0 ;
+    fill:transparent;
 }
+ }
