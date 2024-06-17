@@ -3,6 +3,7 @@
   padding-bottom: 80px;
 }
 
+
 .about-me-title {
   font-family: "Impact", sans-serif;
   font-weight: 400;
@@ -29,6 +30,8 @@
   width: 320px;
   height: 374px;
 }
+.picture-aboutme:hover{
+transform: scale(1.05);}
 
 
 .bio-title {
@@ -172,3 +175,4 @@
     background-position: right 4% bottom 25%;
   }
 }
+
