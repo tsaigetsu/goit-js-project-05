@@ -44,7 +44,7 @@ export function workTogether() {
         successModal.style.visibility = 'hidden';
         successModal.style.pointerEvents = 'none';
         modalContent.style.visibility = 'hidden';
-        modalContent.style.visibility = 'none';
+        modalContent.style.pointerEvents = 'none';
         body.classList.remove('header_overflow-hidden');
     };
 
