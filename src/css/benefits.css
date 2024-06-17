@@ -40,7 +40,7 @@
   border-radius: 8px;
   width: 48px;
   height: 48px;
-  background-color: #00b0681a;
+  background-color: var(--light-accent);
 }
 
 .benefits_icon {
