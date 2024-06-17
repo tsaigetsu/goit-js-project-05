@@ -1,4 +1,4 @@
-.dark {
+/* .dark {
     background-color: var(--black);
     color: var(--white);
 
@@ -9,8 +9,10 @@
     .footer_copy_link {
         color: var(--white);
     }
+} */
+.footer {
+    border-top: 1px solid var(--light-grey);
 }
-
 .footer-container {
     display: flex;
     flex-direction: column;
@@ -22,14 +24,9 @@
     font-size: 32px;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    color: var(--black);
 }
 
 .footer_logo_span {
-    font-family: var(--second-family);
-    font-size: 32px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
     color: var(--accet-green);
 }
 
@@ -62,7 +59,6 @@
     line-height: 150%;
     letter-spacing: 0.03em;
     text-align: center;
-    color: var(--black);
     width: 197px;
     box-sizing: content-box;
 }

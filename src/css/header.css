@@ -2,8 +2,9 @@
     padding: 20px 0;
     height: 64px;
     width: 100%;
-    /* position: fixed; */
+    position: fixed;
     z-index: 100;
+    background-color: var(--white);
 }
 .header_container {
     display: flex;
@@ -165,6 +166,9 @@ text-transform: uppercase;
 }
 /* Dark Mode */
 .dark-mode-on {
+    .header {
+        background-color: #1E2023;
+    }
   .burger-line {
     background-color: var(--white);
   }

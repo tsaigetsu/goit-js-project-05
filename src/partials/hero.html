@@ -7,27 +7,34 @@
     Пример: header_html_nr3, hero_css_nr7, footere_adaptive_nr13
 -->
 <section class="hero" id="hero">
-  <div class="hero_decor_bg"></div>
   <div class="container hero_content">
     <h1 class="hero_title">
-      <span class="hero_title_headline">HELLO, I AM</span> <br />
-      <span class="hero_title_span">FULLSTACK DEVELOPER</span>
+      hello, i am<picture class="hero_image-container">
+        <source srcset="./img/hero/img.jpg 1x, ./img/hero/img@2x.jpg" />
+        <img
+          class="hero_image"
+          src="./img/hero/img.jpg"
+          alt="Lloyd Jefferson"
+          width="108"
+        /> </picture
+      ><span class="hero_title_span">FULLSTACK DEVELOPER</span>
     </h1>
     <!-- button -->
-    <a class="hero_button_ref" href="#">
-      <div class="hero_button_arrow"></div>
-      <div class="hero_text btn_txt">Order the project</div>
+    <div class="hero_button-and-text">
+      <a href="#workTogether" class="hero_text btn_txt">
+        <svg class="hero_icon">
+          <use href="./public/symbol-defs.svg#icon-hero_arrow"></use>
+        </svg>Order the project
+      </a>
 
-      <div class="hero_button_rectangle"></div>
-    </a>
-
-    <!-- text -->
-    <p class="hero_text">
-      I work with people all over the world to create
-      <span class="hero_text_color">impressive</span> and
-      <span class="hero_text_color">functional websites</span> that reflect each
-      client's unique personality.
-    </p>
+      <!-- text -->
+      <p class="hero_text hero_descr">
+        I work with people all over the world to create
+        <span class="hero_text_color">impressive</span> and
+        <span class="hero_text_color">functional websites</span> that reflect
+        each client's unique personality.
+      </p>
+    </div>
   </div>
 
   <!-- social media -->
