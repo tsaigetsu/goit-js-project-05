@@ -21,9 +21,9 @@
     
     <link rel="icon" href="/goit-js-project-05/assets/favicon-c79c9faf.svg" />
     <script type="module" crossorigin src="/goit-js-project-05/commonHelpers.js"></script>
-    <link rel="modulepreload" crossorigin href="/goit-js-project-05/assets/vendor-8f98089f.js">
-    <link rel="stylesheet" href="/goit-js-project-05/assets/vendor-8255b786.css">
-    <link rel="stylesheet" href="/goit-js-project-05/assets/index-7a657e05.css">
+    <link rel="modulepreload" crossorigin href="/goit-js-project-05/assets/vendor-c34d1063.js">
+    <link rel="stylesheet" href="/goit-js-project-05/assets/vendor-d5231366.css">
+    <link rel="stylesheet" href="/goit-js-project-05/assets/index-6d65b51f.css">
   </head>
 
   <body>
@@ -507,7 +507,28 @@
   </div>
 </section>
 
-      <section class="reviews" id="reviews"></section>
+      <section class="reviews" id="reviews">
+  <div class="container reviews_container">
+    <h2 class="reviews_title">Reviews</h2>
+
+    <!-- Swiper -->
+    <div class="reviews_swiper">
+      <ul class="swiper-wrapper reviews_list" id="reviews_list"></ul>
+      <div class="review_arrows">
+        <div class="button_prev">
+          <svg class="review_icon_prev" width="24" height="24">
+            <use href="../img/symbol-defs-2.svg#icon-arrow-narrow-left"></use>
+          </svg>
+        </div>
+        <div class="button_next">
+          <svg class="review_icon_next" width="24" height="24">
+            <use href="../img/symbol-defs-2.svg#icon-arrow-narrow-right"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!--
     Внимательно проверяем файл styles.css и смотрим, что там прописано, чтобы не придумывать заново велосипед, а использовать руты и стандартный контейнер. 
@@ -517,6 +538,7 @@
     Название пуша должна содержать название секции, название элемента над которым работаете и номер обновления.
     Пример: header_html_nr3, hero_css_nr7, footere_adaptive_nr13
 -->
+
       <section class="workTogether" id="workTogether">
     <div class="container workTogether-container" >
         <h2 class="workTogether-title">LET'S <span class="workTogether-span"> WORK TOGETHER </span></h2>
