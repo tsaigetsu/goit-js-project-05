@@ -199,7 +199,7 @@ color: rgba(41, 41, 41, 0.40);
     text-transform: uppercase;
 }
 
-.workTogether-button:hover, :focus {
+.workTogether-button:hover, .workTogether-button:focus {
 background: #009156;
 }
 /* tablet */

@@ -96,7 +96,7 @@
   display: block;
   margin: 0 auto;
   margin-top: 40px;
-  background-color: #f0f0f0;
+  background-color: transparent;
   padding: 12px 24px;
   color: #292929;
   font-family: Poppins;
@@ -231,7 +231,6 @@
 
   .load-more-btn {
     color: #f0f0f0;
-    background-color: #2a2d32;
   }
 
   .load-more-btn:hover {
