@@ -52,7 +52,7 @@ function showError(message) {
 }
 
 function cardTemplate(review) {
-  return `<li class="swiper-slide review-list-item" id="list-item-id">
+  return `<li class="swiper-slide review-list-item" id="list-item-id" data-aos="zoom-in">
           <p class="review-section-text">${review.review}</p>
           <div class="review-avatar-text">
         <img

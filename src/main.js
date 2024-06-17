@@ -8,4 +8,5 @@ darkMode();
 mobileMenu();
 loadMore();
 initializeAccordion();
+AOS.init();
 workTogether()

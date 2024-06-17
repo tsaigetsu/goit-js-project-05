@@ -40,6 +40,7 @@
   fill: var(--accet-green);
   width: 28px;
   height: 28px;
+  margin-right: 12px;
 }
 .btn_txt {
   position: relative;
