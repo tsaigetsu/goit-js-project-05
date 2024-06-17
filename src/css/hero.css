@@ -55,12 +55,12 @@
   left: 120px;
   width: 165px;
   height: 92px;
-  background-color: rgba(0, 176, 104, 0.2);
+  background-color: rgba(120, 0, 176, 0.2);
   border-radius: 16px;
   z-index: -1;
 }
 .btn_txt:hover::before {
-  background-color: rgba(0, 176, 104, 0.6);
+  background-color: rgba(96, 55, 153, 0.6);
 }
 .hero_text {
   font-family: var(--font-family);
@@ -90,15 +90,15 @@
 }
 .dark-mode-on {
   .social_list {
-    background-color: #2A2D32;
+    background-color: #2a2d32;
   }
 }
 @media screen and (min-width: 768px) {
-    .hero {
-        padding-top: 184px;
-        background-image: url('../img/hero/decor-bg-tab.png');
-        background-position: left 50% top 106px;
-    }
+  .hero {
+    padding-top: 184px;
+    background-image: url('../img/hero/decor-bg-tab.png');
+    background-position: left 50% top 106px;
+  }
   .hero_title {
     font-size: 136px;
     line-height: 1.14;
@@ -127,20 +127,21 @@
 }
 
 @media screen and (min-width: 1280px) {
-    .hero {
-        padding-top: 280px;
-        background-image: url('../img/hero/decorTabTop.png'), url('../img/hero/decorTabBottom.png');
-        background-position: left calc(50% + 436px) top 106px, left calc(50% - 316px) top 575px;
-
-    }
-    .hero_button-and-text{
-        flex-direction: row;
-        gap: 303px;
-        margin-bottom: 116px;
-    }
-    .hero_descr {
-        width: 592px;
-    }
+  .hero {
+    padding-top: 280px;
+    background-image: url('../img/hero/decorTabTop.png'),
+      url('../img/hero/decorTabBottom.png');
+    background-position: left calc(50% + 436px) top 106px,
+      left calc(50% - 316px) top 575px;
+  }
+  .hero_button-and-text {
+    flex-direction: row;
+    gap: 303px;
+    margin-bottom: 116px;
+  }
+  .hero_descr {
+    width: 592px;
+  }
   .hero_title {
     display: flex;
     flex-wrap: wrap;

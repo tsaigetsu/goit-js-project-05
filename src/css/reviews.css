@@ -1,19 +1,19 @@
 .dark-mode-on {
   .swiper-slide {
-    background-color: #2A2D32;
+    background-color: #2a2d32;
   }
   .review_icon_prev,
-.review_icon_next {
-  stroke: var(--white);
-}
-.button_prev,
-.button_next {
-  border: 1px solid #2A2D32;
-}
-.button_prev:hover,
-.button_next:hover {
-  background-color: #3B3F45;
-}
+  .review_icon_next {
+    stroke: var(--white);
+  }
+  .button_prev,
+  .button_next {
+    border: 1px solid #2a2d32;
+  }
+  .button_prev:hover,
+  .button_next:hover {
+    background-color: #3b3f45;
+  }
 }
 
 .reviews {

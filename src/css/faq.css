@@ -1,12 +1,12 @@
 .dark-mode-on {
   .faq-item.active {
-    background-color: #204136;
+    background-color: rgba(120, 0, 176, 0.2);
   }
   .faq-btn .faq-btn-open,
-.faq-btn .faq-btn-close {
-  stroke: var(--white);
-  fill: var(--white);
-}
+  .faq-btn .faq-btn-close {
+    stroke: var(--white);
+    fill: var(--white);
+  }
 }
 
 .faq {
@@ -29,7 +29,7 @@
 }
 
 .faq-span {
-  color: #00b068;
+  color: var(--accet-green);
 }
 
 .faq-item {
@@ -41,7 +41,7 @@
 }
 
 .faq-item.active {
-  background-color: #bcdfd1;
+  background-color: var(--light-accent);
   border-radius: 16px;
   border-bottom: none;
 }
