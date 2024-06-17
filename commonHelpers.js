@@ -4,7 +4,7 @@ import{A as u}from"./assets/vendor-8f98089f.js";(function(){const s=document.cre
 <div class="my-project-name-and-link-container">
 <h3 class="project-name">${t.name}</h3>
 <div class="my-project-link-container">
-<a class="my-project-link" href="${t.link}">Visit<svg class="icon-arrow" width="24" height="24">
+<a class="my-project-link" href="${t.link}" target="blank">Visit<svg class="icon-arrow" width="24" height="24">
     <use href="${N}#icon-greenArrow"></use>
   </svg></a>
   </div>
