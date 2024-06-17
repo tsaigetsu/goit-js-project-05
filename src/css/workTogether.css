@@ -67,6 +67,8 @@ align-items: flex-start;
     line-height: 1.5;
     letter-spacing: 0.03em;
     margin-left: 16px;
+    
+
 }
 
 /* form */
@@ -397,7 +399,7 @@ transition: opacity 250ms ease, visibility 250ms ease;
     right: 16px;
     top: 16px;
     stroke: #2b2b2b;
-    fill: transparent;
+    /* fill: transparent; */
  }
 
  .modal-message {
