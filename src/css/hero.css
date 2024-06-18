@@ -89,6 +89,10 @@
   font-family: var(--font-family);
   text-align: center;
 }
+.social_list_item:hover, :focus {
+  color: var(--accet-green);
+}
+
 .dark-mode-on {
   .social_list {
     background-color: #2a2d32;
@@ -126,6 +130,8 @@
     justify-content: center;
   }
 }
+
+
 
 @media screen and (min-width: 1280px) {
   .hero {
