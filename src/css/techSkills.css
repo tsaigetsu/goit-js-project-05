@@ -126,8 +126,6 @@
         animation-duration: 30s;
     }
 
-}
-
 @media screen and (min-width: 1280px) {
     .techSkills-marquee.bot {
         margin-top: 25px;
