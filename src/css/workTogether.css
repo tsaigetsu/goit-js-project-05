@@ -6,6 +6,7 @@
 }
 
 .workTogether-title {
+  color: var(--black);
   font-family: Impact;
   font-size: 52px;
   font-style: normal;
@@ -230,6 +231,7 @@
     }
   }
   .workTogether-title {
+    color: var(--black);
     font-family: Impact;
     font-size: 108px;
     font-style: normal;
@@ -284,6 +286,7 @@
     column-gap: 136px;
   }
   .workTogether-title {
+    color: var(--black);
     display: block;
     width: 514px;
     height: 248px;
@@ -356,10 +359,13 @@
         .modal-text {
         color: #F0F0F0;
         }
+        .close-btn-svg {
+          fill: var(--white);
+          stroke: var(--white);
+        }
             }
                 /* modal */
  .modal-overlay {
-opacity: 0.8;
 background: #292929;
 position: fixed;
 top: 0;
@@ -376,39 +382,39 @@ transition: opacity 250ms ease, visibility 250ms ease;
  }
 
   .workTogether-title {
-    color: var(--white);
+    color: var(--black);
   }
 
   .workTogether-text {
-    color: var(--white);
+    color: var(--black);
   }
   .workTogether-contacts {
-    color: var(--white);
+    color: var(--black);
   }
   .workTogether-link {
-    color: var(--white);
+    color: var(--black);
   }
   .workTogether-form {
-    color: var(--white);
+    color: var(--black);
   }
   .workTogether-input {
-    background-color: #2a2d32;
+    background: var(--light-grey);
   }
   .workTogether-input::placeholder {
-    color: rgba(240, 240, 240, 0.4);
+    color: rgba(41, 41, 41, 0.40);
   }
   .workTogether-textarea {
-    color: var(--white);
-    background: #2a2d32;
+    color: var(--black);
+    background: var(--light-grey);
   }
   .workTogether-textarea::placeholder {
-    color: rgba(240, 240, 240, 0.4);
+    color: rgba(41, 41, 41, 0.40);;
   }
   .workTogether-button {
     color: var(--white);
   }
   .workTogether-input:not(:placeholder-shown):valid {
-    color: var(--white);
+    color: var(--black);
   }
   .modal-content {
     background: #2a2d32;
@@ -498,6 +504,7 @@ transition: opacity 250ms ease, visibility 250ms ease;
     letter-spacing: 0.025em;
     text-transform: uppercase;
  }
+
 .close-btn {
   position: absolute;
   width: 24px;
