@@ -53,12 +53,12 @@
 .marquee-inner {
     display: flex;
     min-width: 100%;
-    animation: marqueeLine 15s linear infinite;
+    animation: marqueeLine 10s linear infinite;
     column-gap: 16px;
 }
 
 .techSkills-marquee.bot .marquee-inner {
-    animation: marqueeLine 25s linear infinite reverse;
+    animation: marqueeLine 20s linear infinite reverse;
 }
 
 .marquee-line {
@@ -76,7 +76,7 @@
     column-gap: 16px;
 }
 
-.marquee-line-element::before {
+.marquee-line-element:not(.marquee-line:first-child :first-child)::before {
     content: '';
     border-radius: 2px;
     width: 8px;
@@ -84,17 +84,17 @@
     background-color: var(--accet-green);
 }
 
-.techSkills-marquee.bot .marquee-line-element::before {
+.techSkills-marquee.bot .marquee-line-element:not(.marquee-line:first-child :first-child)::before {
     background-color: var(--black);
 }
 
 @keyframes marqueeLine {
     from {
-        transform: translateX(0);
+        transform: translateX(100%);
     }
 
     to {
-        transform: translateX(-100%);
+        transform: translateX(-150%);
     }
 }
 
@@ -138,10 +138,27 @@
     .marquee-line {
         padding: 40px 0;
     }
+
+    .marquee-inner {
+        animation-duration: 20s;
+    }
+    
+    .techSkills-marquee.bot .marquee-inner {
+        animation-duration: 30s;
+    }
+
 }
 
 @media screen and (min-width: 1280px) {
     .techSkills-marquee.bot {
         margin-top: 25px;
+    }
+
+    .marquee-inner {
+        animation-duration: 40s;
+    }
+    
+    .techSkills-marquee.bot .marquee-inner {
+        animation-duration: 60s;
     }
 }
