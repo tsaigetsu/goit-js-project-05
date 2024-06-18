@@ -307,7 +307,73 @@
 }
 /* dark mode */
 .dark-mode-on {
-  background-color: var(--black);
+    background-color: var(--black);
+    
+        .workTogether-title {
+            color: var(--white);
+        }
+    
+        .workTogether-text {
+            color: var(--white);
+        }
+        .workTogether-contacts {
+            color: var(--white) ;
+        }
+        .workTogether-link {
+            color: var(--white);
+        }
+        .workTogether-form {
+            color: var(--white);
+        }
+        .workTogether-input {
+            background-color: #2A2D32;;
+        }
+        .workTogether-input::placeholder {
+            color: rgba(240, 240, 240, 0.40);
+        }
+        .workTogether-textarea {
+            color: var(--white);
+            background: #2A2D32;
+        }
+        .workTogether-textarea::placeholder {
+            color: rgba(240, 240, 240, 0.40);
+        }
+        .workTogether-button {
+            color: var(--white);
+        }
+        .workTogether-input:not(:placeholder-shown):valid {
+            color: var(--white);
+                }
+        .modal-content {
+            background: #2A2D32;
+        }
+        .modal-message {
+        background: #2A2D32;
+        }
+        .modal-title {
+        color: var(--accet-green);
+        }
+        .modal-text {
+        color: #F0F0F0;
+        }
+            }
+                /* modal */
+ .modal-overlay {
+opacity: 0.8;
+background: #292929;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: 1;
+display: flex;
+align-items: center;
+justify-content: center;
+pointer-events: none;
+visibility: hidden;
+transition: opacity 250ms ease, visibility 250ms ease;
+ }
 
   .workTogether-title {
     color: var(--white);
@@ -422,6 +488,17 @@
   letter-spacing: 0.025em;
   text-transform: uppercase;
 }
+ .modal-title {
+    color: var(--accet-green);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+ }
 .close-btn {
   position: absolute;
   width: 24px;
@@ -450,7 +527,6 @@
   letter-spacing: 0.025em;
   text-transform: uppercase;
 }
-
 .modal-text {
   color: #292929;
   text-align: center;
@@ -470,6 +546,6 @@
     right: 20px;
     top: 20px;
     stroke: #f0f0f0;
-    fill: transparent;
+
   }
 }
