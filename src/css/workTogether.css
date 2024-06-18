@@ -354,7 +354,7 @@ background-color: #E4E5E6;
         background: #2A2D32;
         }
         .modal-title {
-        color: #14C57C;
+        color: var(--accet-green);
         }
         .modal-text {
         color: #F0F0F0;
