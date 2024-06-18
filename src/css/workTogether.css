@@ -199,7 +199,7 @@ background-color: #E4E5E6;
     padding: 12px 24px;
     border-radius: 8px;
     border: none;
-    background-color: #00B068;
+    background-color: #603799;
     color: #F0F0F0;
     text-align: center;
     width: 100%;
@@ -210,8 +210,6 @@ background-color: #E4E5E6;
 
 .workTogether-button:hover,
 .workTogether-button:focus {
-  background: #009156;
-  color: var(--accet-green);
   background-color: var(--accet-green);
 }
 /* tablet */
@@ -414,7 +412,7 @@ transition: opacity 250ms ease, visibility 250ms ease;
  }
 
  .modal-title {
-    color: #00B068;
+    color: var(--accet-green);
     text-align: center;
     font-family: Poppins;
     font-size: 20px;
@@ -441,18 +439,6 @@ transition: opacity 250ms ease, visibility 250ms ease;
   gap: 16px;
 }
 
-.modal-title {
-  color: #00b068;
-  text-align: center;
-  font-family: Poppins;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.6;
-  letter-spacing: 0.025em;
-  text-transform: uppercase;
-}
-
 .modal-text {
   color: #292929;
   text-align: center;
@@ -472,6 +458,6 @@ transition: opacity 250ms ease, visibility 250ms ease;
     right: 20px;
     top: 20px;
     stroke: #f0f0f0;
-    fill: transparent;
+
   }
 }
