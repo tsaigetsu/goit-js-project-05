@@ -175,7 +175,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .faq::before {
-      background-image: url(../img/faq/decor-faq@2x.webp);
+      background-image: url('../img/faq/decor-faq@2x.png');
     }
   }
 
