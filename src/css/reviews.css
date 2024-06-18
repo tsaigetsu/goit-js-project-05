@@ -61,7 +61,6 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  width: 100%;
 }
 
 .swiper-wrapper {
@@ -73,7 +72,6 @@
   justify-content: center;
   flex-direction: column;
   background-color: var(--light-grey);
-  width: auto;
 }
 
 .review_arrows {
@@ -103,9 +101,8 @@
 
 .review-list-item {
   padding: 32px;
-  /* flex: 1 0 auto; */
+  width: calc(100% - 40px);
   min-height: 296px;
-  /* width: 320px; */
   overflow: hidden;
   border-radius: 16px;
   background: var(--light-grey);
