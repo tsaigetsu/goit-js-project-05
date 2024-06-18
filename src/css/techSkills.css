@@ -19,7 +19,6 @@
 
 .techSkills {
   overflow: hidden;
-  background-color: var(--white);
 }
 
 .techSkills-marquee {
@@ -95,9 +94,6 @@
 }
 
 .dark-mode-on {
-  .techSkills {
-    background-color: #1e2023;
-  }
 
   .techSkills-marquee {
     color: var(--white);
@@ -105,7 +101,7 @@
   }
 
   .marquee-line-element::before {
-    background-color: rgba(120, 0, 176, 0.2);
+    background-color: rgba(149, 74, 255, 0.6);
   }
 
   .techSkills-marquee.bot {

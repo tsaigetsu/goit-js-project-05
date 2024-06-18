@@ -258,7 +258,8 @@
     padding-top: 164px;
     padding-bottom: 164px;
     background-image: url('../img/work-together/decor-bg-4.png');
-    background-position: 88% 9%;
+    /* background-position: 88% 9%; */
+    background-position: left calc(50% + 350px) top 30px;
     background-repeat: no-repeat;
     background-size: 526px 408px;
   }
