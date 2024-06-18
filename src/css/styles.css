@@ -6,7 +6,7 @@
 */
 @import url('./reset.css');
 @import url('./header.css');
-@import url('./aboutMe.css');
+@import url('./About.css');
 @import url('./benefits.css');
 @import url('./faq.css');
 @import url('./footer.css');
@@ -18,16 +18,16 @@
 
 :root {
   --black: #292929;
-  --accet-green: #00b068;
+  --accet-green: #603799;
   --white: #f0f0f0;
   --light-grey: #e4e5e6;
-  --light-accent: #bcdfd1;
+  --light-accent: #D1C5E0;
 }
 
 :root {
-  --font-family: "Poppins", sans-serif;
-  --second-family: "Impact", sans-serif;
-  --third-family: "Montserrat", sans-serif;
+  --font-family: 'Poppins', sans-serif;
+  --second-family: 'Impact', sans-serif;
+  --third-family: 'Montserrat', sans-serif;
 }
 html {
   scroll-behavior: smooth;
@@ -39,7 +39,7 @@ body {
 }
 
 .dark-mode-on {
-  background-color: #1E2023;
+  background-color: #1e2023;
   color: var(--white);
 }
 
@@ -66,7 +66,7 @@ body {
   }
 }
 
-.aboutMe,
+.About,
 .benefits,
 .faq,
 .footer,

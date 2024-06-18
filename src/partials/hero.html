@@ -1,14 +1,6 @@
-<!--
-    Внимательно проверяем файл styles.css и смотрим, что там прописано, чтобы не придумывать заново велосипед, а использовать руты и стандартный контейнер. 
-    Название и id секции не меняем, работаем только со своим html и css партиалами. 
-    Название классов должны в начале включать названи секции, пример: "header_nav", "hero_mainHeading".
-    Работаем только в своей ветке, в ветку main ничего не пушим. 
-    Название пуша должна содержать название секции, название элемента над которым работаете и номер обновления.
-    Пример: header_html_nr3, hero_css_nr7, footere_adaptive_nr13
--->
 <section class="hero" id="hero">
   <div class="container hero_content">
-    <h1 class="hero_title">
+    <h1 class="hero_title" data-aos="fade-right">
       hello, i am<picture class="hero_image-container">
         <source srcset="./img/hero/img.jpg 1x, ./img/hero/img@2x.jpg" />
         <img
@@ -20,7 +12,7 @@
       ><span class="hero_title_span">FULLSTACK DEVELOPER</span>
     </h1>
     <!-- button -->
-    <div class="hero_button-and-text">
+    <div class="hero_button-and-text" data-aos="fade-left">
       <a href="#workTogether" class="hero_text btn_txt">
         <svg class="hero_icon">
           <use href="./public/symbol-defs.svg#icon-hero_arrow"></use>
@@ -41,28 +33,24 @@
   <div class="social_media">
     <ul class="social_list">
       <li class="social_list_item">
-        <a href="https://www.instagram.com/goitclub/" class="social_list_link"
-          >Instagram</a
+        <a href="https://www.instagram.com/goitclub/" class="social_list_link" target="_blank">Instagram</a
         >
       </li>
       <li class="social_list_item">
-        <a href="https://www.facebook.com/goITclub/" class="social_list_link"
-          >Facebook</a
+        <a href="https://www.facebook.com/goITclub/" class="social_list_link" target="_blank">Facebook</a
         >
       </li>
       <li class="social_list_item">
         <a
           href="https://www.linkedin.com/school/goit-start-your-career-in-it"
-          class="social_list_link"
-          >LinkedIn</a
+          class="social_list_link" target="_blank">LinkedIn</a
         >
       </li>
       <li class="social_list_item">
         <a
           href="https://github.com/tsaigetsu/goit-js-project-05"
-          class="social_list_link"
-          >GitHub</a
-        >
+          class="social_list_link" target="_blank">GitHub</a
+          >
       </li>
     </ul>
   </div>

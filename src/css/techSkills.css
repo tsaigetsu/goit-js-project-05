@@ -1,82 +1,77 @@
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .techSkills ul {
-    list-style-type: none;
-    margin: 0;
-    padding-left: 0;
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
 }
 
-
-
 .techSkills {
-    overflow: hidden;
-    background-color: var(--white);
+  overflow: hidden;
 }
 
 .techSkills-marquee {
-    background-color: var(--light-accent);
-    font-family: var(--font-family);
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-    text-transform: uppercase;
-    color: var(--black);
-    position: relative;
-    z-index: 2;
+  background-color: var(--light-accent);
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--black);
+  position: relative;
+  z-index: 2;
 }
 
-
 .techSkills-marquee.bot {
-    margin-top: 14px;
-    min-width: calc(100% + 5px);
-    position: relative;
-    transform: translateX(-5px) rotate(2deg);
-    transform-origin: bottom right;
-    background-color: var(--light-grey);
-    color: var(--accet-green);
-    z-index: 1;
-
+  margin-top: 14px;
+  min-width: calc(100% + 5px);
+  position: relative;
+  transform: translateX(-5px) rotate(2deg);
+  transform-origin: bottom right;
+  background-color: var(--light-grey);
+  color: var(--accet-green);
+  z-index: 1;
 }
 
 .marquee-inner {
     display: flex;
     min-width: 100%;
-    animation: marqueeLine 15s linear infinite;
+    animation: marqueeLine 10s linear infinite;
     column-gap: 16px;
 }
 
 .techSkills-marquee.bot .marquee-inner {
-    animation: marqueeLine 25s linear infinite reverse;
+    animation: marqueeLine 20s linear infinite reverse;
 }
 
 .marquee-line {
-    flex-shrink: 0;
-    padding: 32px 0;
-    white-space: nowrap;
-    display: flex;
-    align-items: center;
-    column-gap: 16px;
+  flex-shrink: 0;
+  padding: 32px 0;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
 }
 
 .marquee-line-element {
-    display: flex;
-    align-items: center;
-    column-gap: 16px;
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
 }
 
-.marquee-line-element::before {
+.marquee-line-element:not(.marquee-line:first-child :first-child)::before {
     content: '';
     border-radius: 2px;
     width: 8px;
@@ -84,64 +79,63 @@
     background-color: var(--accet-green);
 }
 
-.techSkills-marquee.bot .marquee-line-element::before {
+.techSkills-marquee.bot .marquee-line-element:not(.marquee-line:first-child :first-child)::before {
     background-color: var(--black);
 }
 
 @keyframes marqueeLine {
     from {
-        transform: translateX(0);
+        transform: translateX(100%);
     }
 
     to {
-        transform: translateX(-100%);
+        transform: translateX(-150%);
     }
 }
 
 .dark-mode-on {
-    .techSkills {
-        background-color: #1e2023;
-    }
 
-    .techSkills-marquee {
-        color: var(--white);
-        background-color: #204136;
-    }
+  .techSkills-marquee {
+    color: var(--white);
+    background-color: rgba(96, 55, 153, 0.6);
+  }
 
-    .marquee-line-element::before {
-        background-color: #14c57c;
-    }
+  .marquee-line-element::before {
+    background-color: rgba(149, 74, 255, 0.6);
+  }
 
-    .techSkills-marquee.bot {
-        color: #14c57c;
-        background-color: #2a2d32;
-    }
+  .techSkills-marquee.bot {
+    color: rgba(149, 74, 255, 0.6);
+    background-color: #2a2d32;
+  }
 
-    .techSkills-marquee.bot .marquee-line-element::before {
-        background-color: var(--white);
-    }
+  .techSkills-marquee.bot .marquee-line-element::before {
+    background-color: var(--white);
+  }
 }
-
-
-@media screen and (min-width: 768px) {
-
-    .techSkills-marquee {
-        font-size: 36px;
-        line-height: 1.33333;
-        letter-spacing: 0.01em;
-    }
-
-    .techSkills-marquee.bot {
-        margin-top: 20px;
-    }
 
     .marquee-line {
         padding: 40px 0;
     }
-}
+
+    .marquee-inner {
+        animation-duration: 20s;
+    }
+    
+    .techSkills-marquee.bot .marquee-inner {
+        animation-duration: 30s;
+    }
 
 @media screen and (min-width: 1280px) {
     .techSkills-marquee.bot {
         margin-top: 25px;
+    }
+
+    .marquee-inner {
+        animation-duration: 40s;
+    }
+    
+    .techSkills-marquee.bot .marquee-inner {
+        animation-duration: 60s;
     }
 }

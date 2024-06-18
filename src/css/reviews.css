@@ -1,3 +1,21 @@
+.dark-mode-on {
+  .swiper-slide {
+    background-color: #2a2d32;
+  }
+  .review_icon_prev,
+  .review_icon_next {
+    stroke: var(--white);
+  }
+  .button_prev,
+  .button_next {
+    border: 1px solid #2a2d32;
+  }
+  .button_prev:hover,
+  .button_next:hover {
+    background-color: #3b3f45;
+  }
+}
+
 .reviews {
   display: flex;
   justify-content: center;
@@ -12,7 +30,6 @@
 
 .reviews_title {
   margin-bottom: 40px;
-
   font-family: var(--second-family);
   font-weight: 400;
   font-size: 52px;
@@ -32,13 +49,11 @@
 
 .review-section-title {
   margin-left: 16px;
-
   font-family: var(--font-family);
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  color: var(--black);
   font-style: normal;
 }
 
@@ -54,7 +69,7 @@
 }
 
 .swiper-slide {
-  display: flex;
+  display: flex !important;
   justify-content: center;
   flex-direction: column;
   background-color: var(--light-grey);
@@ -88,12 +103,15 @@
 
 .review-list-item {
   padding: 32px;
-  flex: 1 0 auto;
+  /* flex: 1 0 auto; */
   min-height: 296px;
-  width: 320px;
+  /* width: 320px; */
   overflow: hidden;
   border-radius: 16px;
   background: var(--light-grey);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .review-section-text {
@@ -102,7 +120,7 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  color: var(--black);
+  /* color: var(--black); */
   font-style: normal;
   align-self: stretch;
 }
@@ -128,7 +146,9 @@
   fill: none;
   stroke: var(--black);
 }
-
+.review_icon_next {
+  rotate: 180deg;
+}
 .button_prev.disabled,
 .button_next.disabled {
   opacity: 0.5;
@@ -150,14 +170,15 @@
     padding-top: 124px;
   }
   .review-list-item {
-    margin-right: 0 !important;
+    /* margin-right: 0 !important;
 
     width: 704px !important;
-    height: 224px !important;
+    height: 224px !important; */
+    margin-right: 0;
+
+    width: 704px;
+    height: 224px;
     height: auto;
-  }
-  .reviews_list {
-    gap: 32px;
   }
   .reviews_title {
     font-size: 108px;
@@ -169,12 +190,5 @@
 @media screen and (min-width: 1280px) {
   .reviews {
     padding-top: 164px;
-  }
-  .review-list-item {
-    width: 592px !important;
-    height: auto !important;
-  }
-  .reviews_list {
-    gap: 32px;
   }
 }

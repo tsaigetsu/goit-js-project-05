@@ -32,7 +32,7 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  width: 320px;
+  width: calc(100% - 40px);
 }
 
 .benefits_icon_background {
@@ -40,7 +40,7 @@
   border-radius: 8px;
   width: 48px;
   height: 48px;
-  background-color: #00b0681a;
+  background-color: var(--light-accent);
 }
 
 .benefits_icon {
@@ -130,7 +130,7 @@
   }
 
   .benefits_background_image {
-    background-image: url('../img/benefits-background-image.svg');
+    background-image: url('../img/benefits-background-image.png');
     z-index: 1;
     position: absolute;
     width: 526px;

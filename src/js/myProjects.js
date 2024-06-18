@@ -43,7 +43,7 @@ const projectLoad = 3;
 
 
 function projectsCreated(project) {
-  return `<li>
+  return `<li data-aos="zoom-in-up">
   <img class="my-project-img" src="${project.imageSmall}" srcset ="${project.imageSmall} 1x, ${project.imageLarge} 2x" alt="${project.name}">
 <p class="project-tech">React, JavaScript, Node JS, Git</p>
 <div class="my-project-name-and-link-container">

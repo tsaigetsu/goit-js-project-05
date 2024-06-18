@@ -1,5 +1,4 @@
 .my-projects-container {
-  background-color: #f0f0f0;
   padding-top: 80px;
   padding-bottom: 80px;
 }
@@ -17,7 +16,7 @@
 }
 
 .my-projects-title-accent {
-  color: #00b068;
+  color: var(--accet-green);
 }
 
 .projects-list {
@@ -89,6 +88,7 @@
 }
 
 .icon-arrow {
+  stroke: var(--accet-green);
   margin-left: 12px;
 }
 
@@ -96,7 +96,7 @@
   display: block;
   margin: 0 auto;
   margin-top: 40px;
-  background-color: #f0f0f0;
+  background-color: transparent;
   padding: 12px 24px;
   color: #292929;
   font-family: Poppins;
@@ -111,7 +111,7 @@
 }
 
 .load-more-btn:hover {
-  color: #00b068;
+  color: var(--accet-green);
 }
 
 .btn-loadmore::after {
@@ -119,7 +119,7 @@
   content: '';
   height: 2px;
   border-radius: 2px;
-  background: #00b068;
+  background: var(--accet-green);
   position: absolute;
   left: 24px;
   bottom: 12px;
@@ -205,10 +205,6 @@
 /* ==== DARK MODE ==== */
 
 .dark-mode-on {
-  .my-projects-container {
-    background-color: #1e2023;
-  }
-
   .my-projects-title {
     color: #f0f0f0;
   }
@@ -231,10 +227,9 @@
 
   .load-more-btn {
     color: #f0f0f0;
-    background-color: #2a2d32;
   }
 
   .load-more-btn:hover {
-    color: #14c57c;
+    color: var(--accet-green);
   }
 }
