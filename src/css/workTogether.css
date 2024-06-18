@@ -199,7 +199,7 @@ background-color: #E4E5E6;
     padding: 12px 24px;
     border-radius: 8px;
     border: none;
-    background-color: #00B068;
+    background-color: #603799;
     color: #F0F0F0;
     text-align: center;
     width: 100%;
@@ -211,7 +211,6 @@ background-color: #E4E5E6;
 .workTogether-button:hover,
 .workTogether-button:focus {
   background: #009156;
-  color: var(--accet-green);
   background-color: var(--accet-green);
 }
 /* tablet */
