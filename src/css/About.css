@@ -133,7 +133,7 @@ transform: scale(1.05);}
   }
 
   .my-section {
-    background-image: url(../img/about-me-decor-bg-2.png);
+    background-image: url('../img/about-me-decor-bg-2.png');
     background-repeat: no-repeat;
     background-size: auto;
     background-clip: padding-box;
