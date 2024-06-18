@@ -422,7 +422,6 @@ transition: opacity 250ms ease, visibility 250ms ease;
   .modal-text {
     color: #f0f0f0;
   }
-}
 /* modal */
 .modal-overlay {
   background: rgba(41, 41, 41, 0.8);
