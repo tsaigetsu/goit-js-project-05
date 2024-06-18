@@ -24,15 +24,16 @@
   flex-direction: column;
   align-items: center;
   gap: 40px;
-  gap: 40px;
 }
-
+.my-project_item {
+  width: 100%;
+}
 .my-project-img {
   display: block;
   width: 100%;
-  width: 320px;
-  height: 184px;
+  height: auto;
   border-radius: 16px;
+  margin: 0 auto;
 }
 
 .project-tech {
@@ -47,7 +48,7 @@
 
 .project-name {
   margin-top: 16px;
-  width: 320px;
+  width: 100%;
   color: #292929;
   font-family: Poppins;
   font-style: normal;
@@ -188,8 +189,8 @@
   }
 
   .my-project-img {
-    width: 1008px;
-    height: 612px;
+    width: 100%;
+    height: auto;
     border-radius: 24px;
   }
 

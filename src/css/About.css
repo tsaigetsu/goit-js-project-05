@@ -3,9 +3,8 @@
   padding-bottom: 80px;
 }
 
-
 .about-me-title {
-  font-family: "Impact", sans-serif;
+  font-family: 'Impact', sans-serif;
   font-weight: 400;
   font-size: 52px;
   line-height: 1.23;
@@ -25,23 +24,21 @@
   gap: 40px;
 }
 
-.picture-block{
-  width: 100%;
+.picture-block {
+  display: block;
 }
 
 .picture-aboutme {
   border-radius: 16px;
-  width: 320px;
-  height: 374px;
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  height: auto;
 }
-.picture-aboutme:hover{
-transform: scale(1.05);}
-
+.picture-aboutme:hover {
+  transform: scale(1.05);
+}
 
 .bio-title {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 32px;
   line-height: 1.25;
@@ -52,7 +49,7 @@ transform: scale(1.05);}
 }
 
 .bio-body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 1.5;
@@ -102,7 +99,7 @@ transform: scale(1.05);}
     align-items: center;
   }
 
-.picture-aboutme {
+  .picture-aboutme {
     width: 336px;
     height: 392px;
   }
@@ -171,7 +168,7 @@ transform: scale(1.05);}
     align-self: start;
   }
 
-  .education-block{
+  .education-block {
     gap: 136px;
     margin-top: 80px;
     padding-left: 208px;

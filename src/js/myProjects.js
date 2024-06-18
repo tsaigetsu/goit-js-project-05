@@ -43,11 +43,11 @@ const projectLoad = 3;
 
 
 function projectsCreated(project) {
-  return `<li data-aos="zoom-in-up">
+  return `<li class="my-project_item" data-aos="zoom-in-up">
   <img class="my-project-img" src="${project.imageSmall}" srcset ="${project.imageSmall} 1x, ${project.imageLarge} 2x" alt="${project.name}">
 <p class="project-tech">React, JavaScript, Node JS, Git</p>
 <div class="my-project-name-and-link-container">
-<h3 class="project-name">${project.name}</h3>
+<p class="project-name">${project.name}</p>
 <div class="my-project-link-container">
 <a class="my-project-link" href="${project.link}" target="blank">Visit<svg class="icon-arrow" width="24" height="24">
     <use href="${icon_svg}#icon-greenArrow"></use>
