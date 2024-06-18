@@ -6,7 +6,7 @@
 */
 @import url('./reset.css');
 @import url('./header.css');
-@import url('./aboutMe.css');
+@import url('./About.css');
 @import url('./benefits.css');
 @import url('./faq.css');
 @import url('./footer.css');
@@ -18,16 +18,19 @@
 
 :root {
   --black: #292929;
-  --accet-green: #00b068;
+  --accet-green: #603799;
   --white: #f0f0f0;
   --light-grey: #e4e5e6;
-  --light-accent: #bcdfd1;
+  --light-accent: #D1C5E0;
 }
 
 :root {
-  --font-family: "Poppins", sans-serif;
-  --second-family: "Impact", sans-serif;
-  --third-family: "Montserrat", sans-serif;
+  --font-family: 'Poppins', sans-serif;
+  --second-family: 'Impact', sans-serif;
+  --third-family: 'Montserrat', sans-serif;
+}
+html {
+  scroll-behavior: smooth;
 }
 body {
   background-color: var(--white);
@@ -36,11 +39,12 @@ body {
 }
 
 .dark-mode-on {
-  background-color: #1E2023;
+  background-color: #1e2023;
   color: var(--white);
 }
 
 .container {
+  width: 360px;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
@@ -48,6 +52,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .container {
+    width: 768px;
     padding-left: 32px;
     padding-right: 32px;
   }
@@ -55,12 +60,13 @@ body {
 
 @media screen and (min-width: 1280px) {
   .container {
+    width: 1280px;
     padding-left: 32px;
     padding-right: 32px;
   }
 }
 
-.aboutMe,
+.About,
 .benefits,
 .faq,
 .footer,

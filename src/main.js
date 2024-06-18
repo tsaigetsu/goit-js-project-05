@@ -1,10 +1,15 @@
-import { darkMode } from './js/darkMode'
-import { mobileMenu } from './js/mobileMenu'
+import { darkMode } from './js/darkMode';
+import { mobileMenu } from './js/mobileMenu';
+import { loadMore } from './js/myProjects';
+import initializeAccordion from './js/faq';
+import './js/reviews';
+import { workTogether } from './js/workTogether';
 
-import { projectsCreated } from './js/myProjects'
-import { projectsTemplate } from './js/myProjects'
-import { loadMore } from './js/myProjects'
-
-darkMode()
-mobileMenu()
-loadMore()
+darkMode();
+mobileMenu();
+loadMore();
+initializeAccordion();
+AOS.init({
+  once: true,
+});
+workTogether();
