@@ -542,6 +542,7 @@ transition: opacity 250ms ease, visibility 250ms ease;
     padding: 64px;
     width: 492px;
   }
+  
   .close-btn {
     right: 20px;
     top: 20px;
